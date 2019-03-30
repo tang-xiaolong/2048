@@ -60,7 +60,7 @@ void Generator(int dir)
 	if(dir == 1 || dir == 2)
 	{
 		int begin,end,mul;
-		dir == 1?begin = 0,end = N,mul = 1:begin = N-1,end = -1,mul = -1;
+		dir == 1?(begin = 0,end = N,mul = 1):(begin = N-1,end = -1,mul = -1);
 		for(int i = 0;i < N;++i)
 			for(int j = begin;j != end;j += mul) 
 			{
@@ -87,7 +87,7 @@ void Generator(int dir)
 	else if(dir == 3 ||  dir == 4)
 	{
 		int begin,end,mul;
-		dir == 3?begin = 0,end = N,mul = 1:begin = N-1,end = -1,mul = -1;
+		dir == 3?(begin = 0,end = N,mul = 1):(begin = N-1,end = -1,mul = -1);
 		for(int j = begin;j != end;j += mul)
 			for(int i = 0;i < N;++i)
 			{
